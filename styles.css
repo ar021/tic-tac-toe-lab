@@ -1,0 +1,55 @@
+.gameBoard {
+    justify-content: space-between;
+    width: 300px;
+    height:300px;
+    padding: 10% 40%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tl tc tr"
+        "ml mc mr"
+        "bl bc br" ;
+    
+  }
+  
+.item {
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    border: blue 5px solid;
+    font-size: 80px;
+    text-align: center;
+    
+}
+
+.tl{
+    grid-area: tl;
+    
+} 
+.tc{
+    grid-area: tc;
+} 
+.tr{
+    grid-area: tr;
+}
+.ml{
+    grid-area: ml;
+    
+} 
+.mc{
+    grid-area: mc;
+} 
+.mr{
+    grid-area: mr;
+}
+.bl{
+    grid-area: bl;
+} 
+.bc{
+    grid-area: bc;
+} 
+.br{
+    grid-area: br;    
+}
+

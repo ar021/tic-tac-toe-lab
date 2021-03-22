@@ -1,27 +1,33 @@
+.body{
+    display: flex;
+    justify-content: center;
+}
 .gameBoard {
-    justify-content: space-between;
-    width: 300px;
-    height:300px;
-    padding: 10% 40%;
+    margin: 100px auto;
+    width: fit-content;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
     grid-template-areas:
         "tl tc tr"
         "ml mc mr"
         "bl bc br" ;
+    box-shadow: 1px 1px 2px black, 0 0 20px rgb(32, 152, 221), 0 0 5px rgb(36, 36, 230);
     
   }
   
 .item {
-    background-color: cadetblue;
-    height: 100px;
-    width: 100px;
-    border: blue 5px solid;
-    font-size: 80px;
-    text-align: center;
+    background: rgb(7, 0, 0);
+    font-size: 150px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    /* border: 1px solid #555; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(32, 152, 221), 0 0 5px rgb(36, 36, 230);
     
-}
+/* }
 
 .tl{
     grid-area: tl;
@@ -51,5 +57,5 @@
 } 
 .br{
     grid-area: br;    
-}
+} */
 

@@ -1,5 +1,5 @@
 let clickCount = 0;
-const winCombination = [6,15,21,12,18];
+const winCombination = [12,75,160,92,83,87,77,80];
 const player1 = [];
 const player2 = [];
 
@@ -65,6 +65,11 @@ function reset(){
         e.innerText = "";
     });
     clickCount=0;
+    player1.length = 0;
+    player2.length = 0;
+    score1=0;
+    score2=0;
+
 }
 
 function sum(acc, num){

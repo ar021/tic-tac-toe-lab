@@ -1,9 +1,32 @@
-/* .body{
+body{
+    font-family: 'Train One', cursive;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(63, 71, 49);
+    width: fit-content;
+    padding: 10px;
+    margin: 100px auto;
+}
+.game-state{
+    font-size: 25px;
+    text-align: center;
     display: flex;
-    justify-content: center;
-} */
+    width: 800px;
+    margin: 50px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.winner-banner{
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    color:  rgb(36, 36, 230)
+}
 .gameBoard {
-    margin: 200px auto;
+    margin: 100px auto;
     width: fit-content;
     display: grid;
     grid-template-rows: 200px 200px 200px;
@@ -13,9 +36,27 @@
         "ml mc mr"
         "bl bc br" ;
     box-shadow: 1px 1px 2px black, 0 0 20px rgb(32, 152, 221), 0 0 5px rgb(36, 36, 230);
-    
 }
-  
+button {
+    background-color: white; 
+    border: none;
+    color: black; 
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
 .item {
     background: rgb(7, 0, 0);
     font-size: 150px;
@@ -27,9 +68,9 @@
     color: #AAA;
     box-shadow: 1px 1px 2px black, 0 0 25px rgb(32, 152, 221), 0 0 5px rgb(36, 36, 230);
 }
-.X{
+.X, h1{
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 }
-.O{
+.O, span{
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d9ec2f, 0 0 40px #d9ec2f, 0 0 50px #d9ec2f, 0 0 60px #d9ec2f, 0 0 70px #d9ec2f;
 }

@@ -35,14 +35,14 @@ gameBoard.addEventListener("click", function(ev){
             ev.target.classList.add('X');
             player1.push('X');
             checkGameStatus();
-            nextPlayer.innerHTML = 'Player "O" is next';
+            nextPlayer.innerHTML = 'Next Turn : O';
         }
         else if (clickCount%2 !== 0 && clickCount<9){
             addO(ev);
             ev.target.classList.add('O');
             player2.push('O');
             checkGameStatus();
-            nextPlayer.innerHTML = 'Player "X" is next';
+            nextPlayer.innerHTML = 'Next Turn : X';
         }
         return;
     }
@@ -65,17 +65,19 @@ function addO (ev){
 };
 
 function reset(){
-   var dText = document.querySelectorAll(".item");
-    // console.log(dText);
-    dText.forEach(function(e){
-        e.innerText = "";
+   
+    gameBox.forEach(function(box){
+        box.innerText = "";
+        box.classList.remove('X');
+        box.classList.remove('O');
+        
     });
     clickCount=0;
     player1.length = 0;
     player2.length = 0;
     score1=0;
     score2=0;
-    nextPlayer.innerHTML = 'Player "X" is next';
+    nextPlayer.innerHTML = 'Next Turn : X';
     winnerPlayer.innerHTML = '';
 
 }
@@ -128,7 +130,7 @@ function checkGameStatus(){
         winner(topRight);
     }
     else if(clickCount === 9){
-        console.log('Game Tie!!');
+        winnerPlayer.innerHTML = 'Game Tie!!';
     }
     return;
 };

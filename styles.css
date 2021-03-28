@@ -1,9 +1,9 @@
-.body{
+/* .body{
     display: flex;
     justify-content: center;
-}
+} */
 .gameBoard {
-    margin: 100px auto;
+    margin: 200px auto;
     width: fit-content;
     display: grid;
     grid-template-rows: 200px 200px 200px;
@@ -14,48 +14,22 @@
         "bl bc br" ;
     box-shadow: 1px 1px 2px black, 0 0 20px rgb(32, 152, 221), 0 0 5px rgb(36, 36, 230);
     
-  }
+}
   
 .item {
     background: rgb(7, 0, 0);
     font-size: 150px;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    
     /* border: 1px solid #555; */
     display: flex;
     align-items: center;
     justify-content: center;
     color: #AAA;
     box-shadow: 1px 1px 2px black, 0 0 25px rgb(32, 152, 221), 0 0 5px rgb(36, 36, 230);
-    
-/* }
-
-.tl{
-    grid-area: tl;
-    
-} 
-.tc{
-    grid-area: tc;
-} 
-.tr{
-    grid-area: tr;
 }
-.ml{
-    grid-area: ml;
-    
-} 
-.mc{
-    grid-area: mc;
-} 
-.mr{
-    grid-area: mr;
+.X{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
 }
-.bl{
-    grid-area: bl;
-} 
-.bc{
-    grid-area: bc;
-} 
-.br{
-    grid-area: br;    
-} */
-
+.O{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d9ec2f, 0 0 40px #d9ec2f, 0 0 50px #d9ec2f, 0 0 60px #d9ec2f, 0 0 70px #d9ec2f;
+}
